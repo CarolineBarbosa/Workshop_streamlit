@@ -11,8 +11,8 @@ def main():
     st.title("Incêndios Florestais no Brasil")
 
     # Cria um uploader de arquivo na barra lateral para carregar arquivos Excel
-    file = st.sidebar.file_uploader("Carregue seu arquivo:")
-
+    # file = st.sidebar.file_uploader("Carregue seu arquivo:")
+    file = "data/brazilFire.xlsx"
     # Se um arquivo for carregado, ele será lido como um DataFrame do pandas
     if file is not None:
         df_file = pd.read_excel(file)
